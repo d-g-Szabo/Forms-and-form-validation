@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <!-- write a form to collect data from customers -->
+    <form id="customer-form">
+      <label for="customer-name">Customre Name:</label>
+      <input type="text" id="customer-name" name="customerName" required />
+      <label for="customer-email">Email:</label>
+      <input type="email" id="customer-email" name="customerEmail" required />
+      <label for="customer-password">Password:</label>
+      <input
+        type="password"
+        id="customer-password"
+        name="customerPassword"
+        required
+      />
+      <button type="submit">Submit</button>
+      <label for="remember">Remember me:</label>
+      <input
+        type="checkbox"
+        id="customer-checkbox"
+        name="customerCheckbox"
+        value="rememberME"
+      />
+      <select name="customerCountry" required>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Kenya">Kenya</option>
+        <option value="South Africa">South Africa</option>
+      </select>
+    </form>
+  </body>
+  <script src="./script.js"></script>
+</html>
